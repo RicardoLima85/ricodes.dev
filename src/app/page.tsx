@@ -1,3 +1,4 @@
+import { CallToAction } from "@/components/call-to-action";
 import { Hero } from "@/components/hero";
 import { MarqueeDemo } from "@/components/reviews";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <div className="mb-14 space-y-20 h-[5000px]">
       <Hero />
       <MarqueeDemo />
+      <CallToAction />
     </div>
   );
 }
