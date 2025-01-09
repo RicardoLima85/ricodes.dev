@@ -15,19 +15,21 @@ export function Hero() {
 
           <Animation once direction="left" duration={0.5} delay={0.4}>
             <p className="text-lg text-muted-foreground">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-              temporibus ut, ad molestias error soluta quod asperiores nobis
-              assumenda? Quam iste ea quasi nobis consectetur accusamus nisi
-              deleniti necessitatibus ipsam?
+              Sou um entusiasta apaixonado por programação, com experiência em
+              empresas nacionais e internacionais. Formado em Análise e
+              Desenvolvimento de Sistemas, atualmente curso bacharelado em
+              Sistemas de Informação, sempre buscando aprender e inovar. Gosto
+              de explorar soluções criativas para desafios e compartilhar
+              conhecimento para ajudar outros a crescerem na área.
             </p>
           </Animation>
 
           <Animation once direction="left" duration={0.5} delay={0.5}>
             <p className="text-lg text-muted-foreground">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-              temporibus ut, ad molestias error soluta quod asperiores nobis
-              assumenda? Quam iste ea quasi nobis consectetur accusamus nisi
-              deleniti necessitatibus ipsam?
+              Seja você iniciante ou profissional em busca de novos insights,
+              estou aqui para compartilhar conhecimento e transformar desafios
+              em realizações. Vamos juntos alcançar seus objetivos no mundo da
+              programação!
             </p>
           </Animation>
         </div>
