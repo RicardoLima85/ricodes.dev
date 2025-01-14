@@ -1,9 +1,31 @@
 import Image from "next/image";
 import { Animation } from "./animation";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
+import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
+
+const words = [
+  {
+    text: "Olá,",
+  },
+  {
+    text: "eu",
+  },
+  {
+    text: "sou",
+  },
+  {
+    text: "Ricardo",
+    className: "text-primary",
+  },
+  {
+    text: "Lima!",
+    className: "text-primary",
+  },
+];
 
 export function Hero() {
   return (
+<<<<<<< HEAD
     <div className="w-full container mt-10 scroll-m-28 px-4 md:px-6" id="about">
       <div className="flex flex-col-reverse md:flex-row gap-8 md:gap-12">
         <div className="space-y-4 md:space-y-6">
@@ -11,6 +33,13 @@ export function Hero() {
             <h1 className="text-2xl md:text-3xl text-pretty font-bold">
               Olá, eu sou <span className="text-primary">Ricardo Lima</span>!
             </h1>
+=======
+    <div className="w-full container mt-10 scroll-m-28" id="about">
+      <div className="flex items-center gap-12">
+        <div className="space-y-2">
+          <Animation once direction="left" duration={0.5} delay={0.3}>
+            <TypewriterEffectSmooth words={words} />
+>>>>>>> develop
           </Animation>
 
           <Animation once direction="left" duration={0.5} delay={0.4}>

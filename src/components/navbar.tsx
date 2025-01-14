@@ -10,7 +10,6 @@ import {
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import { ThemeToggle } from "./theme-toggle";
 import { DialogTitle } from "./ui/dialog";
@@ -74,13 +73,9 @@ export function Navbar() {
     >
       <div className="flex items-center justify-between w-full">
         <div className="flex items-center gap-4">
-          <Image
-            src="/img/logo.png"
-            alt="logo"
-            width={1920}
-            height={1080}
-            className="h-fit w-40 object-contain"
-          />
+          <p className="text-foreground font-bold text-3xl font-grotesk">
+            ricodes.<span className="text-primary">dev</span>
+          </p>
         </div>
         <div className="md:block hidden">
           <NavbarDesktop />
