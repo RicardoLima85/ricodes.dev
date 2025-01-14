@@ -18,7 +18,7 @@ const reviews = [
   {
     name: "John",
     username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
+    body: "I'm at a loss for words. This is amazing. I love it. Exmplo com um texto muito grande, olha só esse texto aqui aaaaaaaaa aaaaaaaaaa adadw dad awdwajdajdnjawndjawndj najdnjkand jkandjkandjanjkd nakjdnajkndjkandkjaw nakjnd ajknd ajkdnajkndajkndajkdnajkdnajkdnaj knajkn ajkndjkandjkawndjkand.",
     img: "/vercel.svg",
   },
   {
@@ -41,9 +41,6 @@ const reviews = [
   },
 ];
 
-const firstRow = reviews.slice(0, reviews.length / 2);
-const secondRow = reviews.slice(reviews.length / 2);
-
 const ReviewCard = ({
   img,
   name,
@@ -56,7 +53,7 @@ const ReviewCard = ({
   body: string;
 }) => {
   return (
-    <div className="relative w-64 cursor-pointer overflow-hidden rounded-xl border p-4 bg-muted">
+    <div className="relative size-72 cursor-pointer overflow-hidden rounded-xl border p-4 bg-muted">
       <div className="flex flex-row items-center gap-2">
         <Image
           className="rounded-full"
@@ -95,12 +92,7 @@ export function MarqueeDemo() {
         className="flex w-full flex-col items-center justify-center overflow-hidden rounded-lg md:shadow-xl [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]"
       >
         <Marquee pauseOnHover className="[--duration:20s]">
-          {firstRow.map((review) => (
-            <ReviewCard key={review.username} {...review} />
-          ))}
-        </Marquee>
-        <Marquee reverse pauseOnHover className="[--duration:20s]">
-          {secondRow.map((review) => (
+          {reviews.map((review) => (
             <ReviewCard key={review.username} {...review} />
           ))}
         </Marquee>

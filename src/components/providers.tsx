@@ -9,8 +9,7 @@ export function Providers({ children }: Props) {
     <main>
       <ThemeProvider
         attribute="class"
-        defaultTheme="system"
-        enableSystem
+        defaultTheme="dark"
         disableTransitionOnChange
       >
         {children}
