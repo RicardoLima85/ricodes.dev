@@ -6,30 +6,30 @@ import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 const words = [
   {
     text: "Olá,",
-    className: "text-2xl md:text-4xl lg:text-5xl"
+    className: "text-2xl md:text-[32px] lg:text-[44px]"
   },
   {
     text: "eu",
-    className: "text-2xl md:text-4xl lg:text-5xl"
+    className: "text-2xl md:text-[32px] lg:text-[44px]"
   },
   {
     text: "sou",
-    className: "text-2xl md:text-4xl lg:text-5xl"
+    className: "text-2xl md:text-[32px] lg:text-[44px]"
   },
   {
     text: "Ricardo",
-    className: "text-2xl md:text-4xl lg:text-5xl text-primary font-bold"
+    className: "text-2xl md:text-[32px] lg:text-[44px] text-primary font-bold"
   },
   {
     text: "Lima!",
-    className: "text-2xl md:text-4xl lg:text-5xl text-primary font-bold"
+    className: "text-2xl md:text-[32px] lg:text-[44px] text-primary font-bold"
   },
 ];
 
 export function Hero() {
   return (
     <div className="w-full container mt-6 md:mt-10 scroll-m-28" id="about">
-      <div className="flex flex-col-reverse md:flex-row items-start justify-between gap-8 md:gap-12">
+      <div className="flex flex-col-reverse md:flex-row items-start gap-8 md:gap-12">
         <div className="space-y-4 md:space-y-6 w-full md:max-w-[60%]">
           <Animation once direction="left" duration={0.5} delay={0.3}>
             <div className="w-full text-left mb-4 md:mb-8">
@@ -58,9 +58,9 @@ export function Hero() {
           </Animation>
         </div>
 
-        <div className="w-full flex justify-center md:block">
+        <div className="w-full flex justify-center md:justify-end">
           <Animation once direction="right" duration={0.5} delay={0.5}>
-            <CardContainer className="w-[280px] md:w-[320px] lg:w-[380px] h-fit bg-muted rounded-md p-2 md:p-3">
+            <CardContainer className="w-[280px] md:w-[300px] lg:w-[320px] h-fit bg-muted rounded-md p-2 md:p-3">
               <CardBody className="h-fit">
                 <CardItem translateZ={80}>
                   <Image
