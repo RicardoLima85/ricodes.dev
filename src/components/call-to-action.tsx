@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Animation } from "./animation";
+import { CalModal } from "./cal-modal";
 import PulsatingButton from "./ui/pulsating-button";
 
 export function CallToAction() {
@@ -32,7 +33,15 @@ export function CallToAction() {
           molestias sapiente, sequi libero alias, ex culpa corporis voluptate ea
           vero.
         </p>
-        <PulsatingButton pulseColor="#29a2b9">Marcar Reunião</PulsatingButton>
+        <CalModal>
+          <PulsatingButton
+            data-cal-link="ricodes/mentoria60min"
+            data-cal-config='{"layout":"month_view"}'
+            pulseColor="#29a2b9"
+          >
+            Agendar Mentoria
+          </PulsatingButton>
+        </CalModal>
       </Animation>
     </div>
   );
