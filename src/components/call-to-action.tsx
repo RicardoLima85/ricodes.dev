@@ -5,7 +5,10 @@ import PulsatingButton from "./ui/pulsating-button";
 
 export function CallToAction() {
   return (
-    <div className="container flex items-center justify-center gap-12">
+    <div
+      className="container flex flex-col md:flex-row items-center justify-center gap-12 scroll-m-36"
+      id="mentorship"
+    >
       <Animation
         delay={0.4}
         duration={0.5}

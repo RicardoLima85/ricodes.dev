@@ -20,6 +20,10 @@ const itemsNav = [
     href: "about",
   },
   {
+    label: "Experiências",
+    href: "experience",
+  },
+  {
     label: "Comentários",
     href: "comments",
   },
