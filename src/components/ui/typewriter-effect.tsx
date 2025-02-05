@@ -42,6 +42,7 @@ export const TypewriterEffect = ({
         }
       );
     }
+    /* eslint-disable react-hooks/exhaustive-deps */
   }, [isInView]);
 
   const renderWords = () => {
