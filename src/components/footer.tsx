@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Animation } from "./animation";
 import { Icons } from "./icons";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { LinkPreview } from "./ui/link-preview";
 
 const socials = [
   {
@@ -73,6 +74,24 @@ export function Footer() {
             <social.icon className="size-6" />
           </Link>
         ))}
+      </Animation>
+
+      <Animation
+        margin="-30px"
+        direction="right"
+        once
+        duration={0.4}
+        delay={0.8}
+      >
+        <span className="text-sm text-muted-foreground">
+          Desenvolvido com ❤️ por {""}
+          <LinkPreview
+            url="https://github.com/MatheusLukas"
+            className="font-bold bg-clip-text text-transparent bg-gradient-to-br from-purple-500 to-pink-500"
+          >
+            Matheus
+          </LinkPreview>
+        </span>
       </Animation>
     </div>
   );

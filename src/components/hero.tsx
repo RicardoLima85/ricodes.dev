@@ -6,32 +6,38 @@ import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 const words = [
   {
     text: "Olá,",
-    className: "text-2xl md:text-[32px] lg:text-[44px]"
+    className: "text-2xl md:text-[32px] lg:text-[44px]",
   },
   {
     text: "eu",
-    className: "text-2xl md:text-[32px] lg:text-[44px]"
+    className: "text-2xl md:text-[32px] lg:text-[44px]",
   },
   {
     text: "sou",
-    className: "text-2xl md:text-[32px] lg:text-[44px]"
+    className: "text-2xl md:text-[32px] lg:text-[44px]",
   },
   {
     text: "Ricardo",
-    className: "text-2xl md:text-[32px] lg:text-[44px] text-primary font-bold"
+    className: "text-2xl md:text-[32px] lg:text-[44px] text-primary font-bold",
   },
   {
     text: "Lima!",
-    className: "text-2xl md:text-[32px] lg:text-[44px] text-primary font-bold"
+    className: "text-2xl md:text-[32px] lg:text-[44px] text-primary font-bold",
   },
 ];
 
 export function Hero() {
   return (
     <div className="w-full container mt-6 md:mt-10 scroll-m-28" id="about">
-      <div className="flex flex-col-reverse md:flex-row items-start gap-8 md:gap-12">
-        <div className="space-y-4 md:space-y-6 w-full md:max-w-[60%]">
-          <Animation once direction="left" duration={0.5} delay={0.3}>
+      <div className="grid grid-cols-1 lg:grid-cols-[8fr_4fr] items-start gap-8 md:gap-12">
+        <div className="space-y-4 md:space-y-6 w-full order-2 lg:order-1">
+          <Animation
+            className="w-full"
+            once
+            direction="left"
+            duration={0.5}
+            delay={0.3}
+          >
             <div className="w-full text-left mb-4 md:mb-8">
               <TypewriterEffectSmooth words={words} />
             </div>
@@ -58,7 +64,7 @@ export function Hero() {
           </Animation>
         </div>
 
-        <div className="w-full flex justify-center md:justify-end">
+        <div className="w-full flex justify-center lg:justify-end order-1 lg:order-2">
           <Animation once direction="right" duration={0.5} delay={0.5}>
             <CardContainer className="w-[280px] md:w-[300px] lg:w-[320px] h-fit bg-muted rounded-md p-2 md:p-3">
               <CardBody className="h-fit">
